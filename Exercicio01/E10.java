@@ -35,7 +35,7 @@ public class E10 {
             System.out.print("\nInforme um valor Y: ");
             y = entrada.nextDouble();
 
-            eq = 2 * (Math.sqrt((3.0*x + 30)) / 3) + Math.pow((y - 32), 4.0);
+            eq = 2 * (Math.sqrt(3.0*x + 30) / 3) + Math.pow((y - 32), 4.0);
 
             System.out.println("\nO valor da equação é: " + eq);
         }
