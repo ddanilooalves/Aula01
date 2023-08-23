@@ -7,7 +7,7 @@ public class E5 {
             System.out.print("\nInforme o valor do produto: ");
             double valor = entrada.nextDouble();
 
-            System.out.print("Informe o valor da porfcentagem do desconto: ");
+            System.out.print("Informe o valor da porcentagem do desconto: ");
             double percent = entrada.nextDouble();
             double contapercent = percent / 100;
             double valordesconto = contapercent * valor;
