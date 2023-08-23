@@ -7,7 +7,7 @@ public class E4 {
             System.out.print("\nInforme um valor para temperatura em Celsius: ");
             double C = entrada.nextDouble();
 
-            double F = C * (9 / 5) + 32;
+            double F = C * (9.0 / 5.0) + 32.0;
             
             System.out.println("Resposta: \n" + "Fahrenheit = " + F);
         }
