@@ -58,6 +58,9 @@ public class Ex07 {
                 System.out.println("Sem porcentagem de aumento!");
                 System.out.println("Não há aumento de salário!");
             }
+            if (cod == 0 || cod > 5) {
+                System.out.println("CÓDIGO INVÁLIDO!");
+            }
         }
     }
 }
