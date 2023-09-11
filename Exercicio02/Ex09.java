@@ -26,6 +26,6 @@ public class Ex09 {
         for (int i = 1; i < y2; i++) {
             total *= x1;
         }
-        return total;
+        System.out.println("Resultado: " + total);
     }
 }
