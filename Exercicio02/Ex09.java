@@ -14,7 +14,7 @@ public class Ex09 {
             System.out.println("Informe um valor Y: ");
             y = entrada.nextInt();
 
-            System.out.println(expo(x, y));
+            System.out.println("Resultado: " + expo(x, y));
         }
     }
     public static int expo(int x1, int y2) {
@@ -26,6 +26,6 @@ public class Ex09 {
         for (int i = 1; i < y2; i++) {
             total *= x1;
         }
-        System.out.println("Resultado: " + total);
+        return total;
     }
 }
