@@ -17,15 +17,14 @@ public class Exe21 {
             for (int i = 0; i < 15; i++) {
                 System.out.println("Informe 15 números: ");
                 vetor[i] = sc.nextInt();
-
-                for (int j = 0; j < vetor.length; j++) {
-                    if (vetor[i] < 0) {
-                        vetorRaiz[i] = (-1);
+            }
+            for (int j = 0; j < vetor.length; j++) {
+                    if (vetor[j] < 0) {
+                        vetorRaiz[j] = (-1);
                     } else {
-                        double calculo = Math.sqrt(vetor[i]/ 2);
-                        vetorRaiz[i] = calculo;
+                        double calculo = Math.sqrt(vetor[j]);
+                        vetorRaiz[j] = calculo;
                     }
-                }
             }
             System.out.println("### Vetor Raiz ###");
             for (int i = 0; i < vetorRaiz.length; i++) {
