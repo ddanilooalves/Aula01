@@ -18,7 +18,7 @@ public class Ex22 {
             }
             for (int i = 0; i < TAM; i++) {
                 if (vetor[i] > 25) {
-                    cont++;
+                    cont = cont + 1;
                     indice = i;
                     System.out.println("O valor " + vetor[i] + " é maior que 25 e está no indice " + indice);
                 }
