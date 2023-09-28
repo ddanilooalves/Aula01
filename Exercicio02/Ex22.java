@@ -9,9 +9,8 @@ import java.util.Scanner;
 public class Ex22 {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            int TAM = 10, indice = 0;
+            int TAM = 10, indice = 0, cont = 0;
             int vetor[] = new int[TAM];
-            int cont = 0;
 
             for (int i = 0; i < TAM; i++) {
                 System.out.println("Informe valores para preencher o vetor de tamanho 10: ");
