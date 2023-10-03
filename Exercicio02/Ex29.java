@@ -11,41 +11,16 @@ import java.util.Scanner;
 
 public class Ex29 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            int[] vetor = new int[10];
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println("Informe o limite inferior: ");
-            int limitInferior = sc.nextInt();
+        int[] vetor = new int[1000];
 
-            System.out.println("Informe o limite superior: ");
-            int limitSuperior = sc.nextInt();
-
-            if (limitInferior >= limitSuperior) {   
-                System.out.println("O limite inferior deve ser menor que o limite superior!");
-                return;
-            }
-
-            int numElements = 0;
-
-            Random r = new Random();
-            while (numElements < 10) {
-                int numAleatorio = sorteia(limitInferior, limitSuperior);
-                
-                boolean existe = false;
-                for (int i = 0; i < numElements; i++) {
-                    if (vetor[i] == numAleatorio) {
-                        existe = true;
-                        break;
-                    }
-                }
-                if (!existe) {
-                    vetor[numElements] = numAleatorio;
-                    numElements++;
-                }
-            }
-            System.out.println("Vetor preenchido!");
-            exibirVetor(vetor);
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = sorteia(0, 1000);
         }
+
+        System.out.println("Vetor: ");
+        exibirVetor(vetor);
     }
 
     public static int sorteia(int limitInferior, int limitSuperior) {
@@ -54,8 +29,12 @@ public class Ex29 {
     }
 
     public static void exibirVetor(int[] vetor) {
+        System.out.println("[ ");
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
+            System.out.println(vetor[i] + " ");
         }
+        System.out.println(" ]");
     }
 }
+
+
