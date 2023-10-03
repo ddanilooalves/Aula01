@@ -12,7 +12,7 @@ public class Ex01 {
             int a;
             double b;
 
-            System.out.println("Informe um valor A inteiro para saber se é divisivel pelo número B informa por você também!");
+            System.out.println("Informe um valor A inteiro para saber se é divisivel pelo número B informado por você também!");
             System.out.print("A: ");
             a = entrada.nextInt();
             System.out.print("B: ");
