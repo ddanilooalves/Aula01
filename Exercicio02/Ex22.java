@@ -12,8 +12,8 @@ public class Ex22 {
             int TAM = 10, indice = 0, cont = 0;
             int vetor[] = new int[TAM];
 
+            System.out.println("Informe valores para preencher o vetor de tamanho 10: ");
             for (int i = 0; i < TAM; i++) {
-                System.out.println("Informe valores para preencher o vetor de tamanho 10: ");
                 vetor[i] = sc.nextInt();
             }
             for (int i = 0; i < TAM; i++) {
