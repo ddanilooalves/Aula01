@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Ex29 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
 
         int[] vetor = new int[1000];
 
@@ -21,6 +21,7 @@ public class Ex29 {
 
         System.out.println("Vetor: ");
         exibirVetor(vetor);
+        }
     }
 
     public static int sorteia(int limitInferior, int limitSuperior) {
